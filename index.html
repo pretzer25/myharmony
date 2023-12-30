@@ -1,4 +1,31 @@
 <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Confirm Box</h2>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt = "";  // Initialize txt with an empty string
+
+  if (confirm("Press a button!")) {
+    window.location.href = "http://www.roblox.com";
+  } else {
+    txt = "You clicked Cancel";
+  }
+
+  document.getElementById("demo").textContent = txt;  // Use textContent for better security
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <style>
