@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<h2>JavaScript Confirm Box</h2>
-
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
+  <body onload="myFunction()">
 
 <script>
 function myFunction() {
   var txt = "";  // Initialize txt with an empty string
 
-  if (confirm("Press a button!")) {
-    window.location.href = "http://www.roblox.com";
+  if (confirm("Want to play Roblox, Fortnite, Subway surfers, Minecraft 1.5.2 all at the same place?")) {
+    window.location.href = "http://www.de-42.netlify.app";
   } else {
-    txt = "You clicked Cancel";
+    txt = "";
   }
 
   document.getElementById("demo").textContent = txt;  // Use textContent for better security
